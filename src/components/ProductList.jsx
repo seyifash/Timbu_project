@@ -3,6 +3,7 @@ import styles from './ProductList.module.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../Actions/cartActions';
 import products1 from '../products.json';
+import { Link } from 'react-router-dom'
 
 const handleImage = (imgName) => {
   return require(`../assets/images/${imgName}`);
@@ -30,7 +31,7 @@ const ProductList = () => {
                 <p>{product.description}</p>
                 <p>${product.price}</p>
               </div>
-              <button onClick={() => handleBuyNow(product)}>Buy Now</button>
+              <button onClick={() => handleBuyNow(product)}><Link to="/cart">Buy Now</Link></button>
             </div>
             
           </li>
