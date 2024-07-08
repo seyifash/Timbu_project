@@ -1,6 +1,12 @@
 import React from 'react';
+import styles from './ProductList.module.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../Actions/cartActions';
+import products1 from '../products.json';
+
+const handleImage = (imgName) => {
+  return require(`../assets/images/${imgName}`);
+}
 
 const ProductList = () => {
   const dispatch = useDispatch();
@@ -10,15 +16,23 @@ const ProductList = () => {
     dispatch(addToCart(product));
   };
 
+  
+
   return (
-    <div>
-      <ul>
-        {products.map(product => (
-          <li key={product.id}>
-            <h2>{product.name}</h2>
-            <p>{product.description}</p>
-            <p>${product.price}</p>
-            <button onClick={() => handleBuyNow(product)}>Buy Now</button>
+    <div className={styles.productcontainer}>
+      <h1 className={styles.h1}>Available items on sale</h1>
+      <ul className={styles.catalogue}>
+        {products1.map(product => (
+          <li key={product.id} className={styles.productitem}>
+            <img src={handleImage(`${product.imagefile}`)} alt={`image${product.id}`}></img>
+            <div className={styles.productdetails}>
+              <div className={styles.descandprice}>
+                <p>{product.description}</p>
+                <p>${product.price}</p>
+              </div>
+              <button onClick={() => handleBuyNow(product)}>Buy Now</button>
+            </div>
+            
           </li>
         ))}
       </ul>

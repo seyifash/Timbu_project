@@ -16,7 +16,7 @@ const Footer = () => {
 
       <form className={styles.feedback}>
         <label className={styles.feedbackquestion}>Have a question or complaint? Send us a message!</label>
-        <input type='text' placeholder='Talk to us.......' className={styles.textarea}/>
+        <textarea type='text' placeholder='Talk to us.......' className={styles.textarea}></textarea>
         <button type='submit' className={styles.button}>
           <span className={styles.buttonvalue}>Send message</span>
         </button>
