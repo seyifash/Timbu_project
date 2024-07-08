@@ -4,63 +4,72 @@
       "name": "Product 1",
       "price": 12000,
       "imagefile": "9fc93be8fd87362f9f0946b1addf34f9.jpg",
-      "description": "Chinos Pants"
+      "description": "Chinos Pants",
+      "category": "Men"
     },
     {
       "id": 2,
       "name": "Product 2",
       "price": 20000,
       "imagefile": "36af6e71e3ed9651c8128e71b26c27f9.jpg",
-      "description": "Leggings"
+      "description": "Leggings",
+      "category": "Women"
     },
     {
       "id": 3,
       "name": "Product 3",
       "price": 4000,
       "imagefile": "37c3ffb8c3ccfa338d4f9a86b4cb6a49.jpg",
-      "description": "Gowns"
+      "description": "Gowns",
+      "category": "Women"
     },
     {
       "id": 4,
       "name": "Product 4",
       "price": 15000,
       "imagefile": "67f1dcabdf024ab16bd3932880def762.jpg",
-      "description": "Sweat Pants"
+      "description": "Sweat Pants",
+      "category": "Men"
     },
     {
       "id": 5,
       "name": "Product 5",
       "price": 15000,
       "imagefile": "560aceb7a281b17a1342fdbc891c126a.jpg",
-      "description": "Hats"
+      "description": "Hats",
+      "category": "Men"
     },
     {
       "id": 6,
       "name": "Product 6",
       "price": 15000,
       "imagefile": "98e335a6ca5224dec69e57dd034f873a.jpg",
-      "description": "Brown Cargo Pants"
+      "description": "Brown Cargo Pants",
+      "category": "Men"
     },
     {
       "id": 7,
       "name": "Product 8",
       "price": 15000,
       "imagefile": "05310b42f2a9fbb26f6a3376f518bf6e.jpg",
-      "description": "Trouser"
+      "description": "Trouser",
+      "category": "Men"
     },
     {
       "id": 8,
       "name": "Product 4",
       "price": 15000,
       "imagefile": "5250578c6dc69c70ebc082777f7dc5a6.jpg",
-      "description": "Pallazo"
+      "description": "Pallazo",
+      "category": "Men"
     },
     {
       "id": 9,
       "name": "Product 4",
       "price": 15000,
       "imagefile": "c69297db5231136a193cefe4e9c14494.jpg",
-      "description": "Blue Jeans"
+      "description": "Blue Jeans",
+      "category": "Men"
     }
 ]  
 

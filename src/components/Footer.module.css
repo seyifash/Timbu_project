@@ -1,10 +1,10 @@
 .container {
     display: flex;
-    height: 277px;
+    min-height: 50vh;
     width: auto;
     display: flex;
     background-color: rgba(140, 84, 0, 1);
-    padding: 2rem 7rem;
+    padding: 1.5rem 7rem;
     justify-content: space-between;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .textarea {
-    height: 124px;
+    height: 9rem;
     border: solid 2px;
     border-radius: 5px;
     border-color: rgba(255, 153, 0, 1);
@@ -67,7 +67,7 @@
 .button {
     width: 231px;
     height: 50px;
-    padding: 10px, 40px, 10px, 40px;
+    padding: 0.5rem 0.5rem;
     border: solid 0;
     border-radius: 8px;
     display: flex;
@@ -75,11 +75,12 @@
     align-items: center;
     gap: 10px;
     background-color: rgba(255, 153, 0, 1);
+    margin-top: 1rem;
 }
 
 .buttonvalue {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 0.85rem;
     line-height: 30px;
     color: rgba(255, 255, 255, 1);
 }

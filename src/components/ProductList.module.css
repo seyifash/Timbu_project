@@ -1,38 +1,34 @@
 .productcontainer {
-    margin-left: 70px;
-    margin-top: 53px;
+   padding: 2rem 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: left;
     min-height: 100vh;
-    width: auto;
 }
 
 .h1 {
     text-align: left;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 4rem;
 }
 
 .catalogue {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    row-gap: 2rem;
 }
 
 .productitem {
     height: auto;
-    width: 25%;
-    padding-bottom:26px;
-    margin: 0px 83px 20px 0px;
+    padding-bottom:1.7rem;
     display: flex;
     flex-direction: column;
     gap: 12px;
     background-color: #F7F7F7;
     box-shadow: 0 2px 10px 0 #0000001A;
 }
-
 
 
 .productitem img {
@@ -51,9 +47,9 @@
     border: solid 0;
     border-radius: 5px;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1rem;
     outline:none;
+    padding: 0.2rem 0.2rem;
 }
 
 .productdetails button  a {
@@ -63,6 +59,66 @@
 
 .descandprice p {
     text-align: left;
+}
+.productcontainer .btn {
+    width: 16rem;
+    background-color: #FF9900;
+    border: solid 0;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 2rem;;
+    outline:none;
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+    margin: 3rem auto;
+}
+
+.productcontainer .category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    margin-top: 2rem;
+}
+.search .input {
+    width: 50%;
+    margin-left: 5rem;
+    border: 1px solid #FF9900;
+    outline: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    color: #FF9900;
+}
+.search .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.cat {
+    display: flex;
+    flex-direction: column;
+}
+.cat span {
+    padding: 0rem 0.5rem;
+    font-size: 0.85rem;
+}
+.filt {
+    font-size: 0.85rem;
+}
+.sea {
+    padding: 0.9rem 3rem;
+    background: #FF9900;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.85rem;
 }
 
 
