@@ -10,6 +10,18 @@
       "name": "Product 2",
       "price": 200,
       "description": "Description for Product 2"
+    },
+    {
+      "id": 3,
+      "name": "Product 2",
+      "price": 200,
+      "description": "Description for Product 2"
+    },
+    {
+      "id": 4,
+      "name": "Product 2",
+      "price": 200,
+      "description": "Description for Product 2"
     }
   ]
   
