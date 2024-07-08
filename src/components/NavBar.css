@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    padding: 1.7rem 7rem;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px 0px #0000000D;
+    ;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    margin-right: 9rem;
+}
+
+ul li a {
+    padding: 0rem 5rem;
+    color: #000;
+    text-decoration: none;
+}
+
+ul li a.active {
+    color: #ff9900;
+}

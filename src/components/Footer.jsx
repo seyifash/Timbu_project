@@ -1,24 +1,24 @@
 import React from 'react';
 import Logo from './logocomponent';
-import styles from './Footer.module.css';
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className={styles.container}>
+    <div className="container">
 
       <Logo />
       
-      <div className={styles.details}>
-        <span className={styles.home}>Home</span>
-        <span className={`${styles.shop}`}>Shop</span>
-        <span className={styles.cart}>Cart</span>
+      <div className="details">
+        <span className="home">Home</span>
+        <span className="shop">Shop</span>
+        <span className="cart">Cart</span>
       </div>
 
-      <form className={styles.feedback}>
-        <label className={styles.feedbackquestion}>Have a question or complaint? Send us a message!</label>
-        <input type='text' placeholder='Talk to us.......' className={styles.textarea}/>
-        <button type='submit' className={styles.button}>
-          <span className={styles.buttonvalue}>Send message</span>
+      <form className="feedback">
+        <label className="feedbackquestion">Have a question or complaint? Send us a message!</label>
+        <textarea type='text' placeholder='Talk to us.......' className="textarea" ></textarea>
+        <button type='submit' className="button" >
+          <span className="buttonvalue">Send message</span>
         </button>
       </form>
     </div>

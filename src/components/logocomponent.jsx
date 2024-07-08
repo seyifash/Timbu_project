@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './logocomponent.module.css';
+import './logocomponent.css';
 
 const Logo = () => {
   return (
-    <div className={styles.logo}>
+    <div className="logo">
         TIMBU STORES
     </div>
   )

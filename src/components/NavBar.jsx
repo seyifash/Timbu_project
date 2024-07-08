@@ -1,17 +1,17 @@
 import React from 'react';
-import Logo from './logocomponent';
-import styles from './NavBar.module.css';
+import { Link } from 'react-router-dom';
+import './NavBar.css';
 
 const NavBar = () => {
   return (
-    <div className={styles.container}>
-      <Logo />
-      <div className={styles.details}>
-        <span className={styles.home}>Home</span>
-        <span className={`${styles.shop} ${styles.active}`}>Shop</span>
-        <span className={styles.cart}>Cart</span>
-      </div>
-    </div>
+    <header>
+      <span>Mr whizzy</span>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/shop" className="active">Shop</Link></li>
+        <li><Link to="/cart">Cart</Link></li>
+      </ul>
+    </header>
   )
 }
 

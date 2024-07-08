@@ -1,17 +1,13 @@
 .container {
-    position: fixed;
-    bottom: 0;
-    height: 277px;
-    width: 100vw;
+    display: flex;
     background-color: rgba(140, 84, 0, 1);
+    padding: 2rem 7rem;
+    justify-content: space-between;
 }
 
 
 
 .details {
-    position: absolute;
-    top: 28px;
-    left: 394px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -28,12 +24,8 @@
 }
 
 .feedback {
-    position: absolute;
-    top: 33px;
-    left: 694px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 
 .feedbackquestion {
@@ -56,17 +48,16 @@
     text-align: start;
     gap: 10px;
     background-color: rgba(140, 84, 0, 1);
+    outline: none;
+    margin-bottom: 1rem;
 }
 
-.textarea::placeholder {
-    position:absolute;
-    left: 0px;
-    top: 0px;
+/*.textarea::placeholder {
     font-weight: 250;
     font-size: 16px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.642);
-}
+}*/
 
 .button {
     width: 231px;
@@ -87,3 +78,4 @@
     line-height: 30px;
     color: rgba(255, 255, 255, 1);
 }
+
