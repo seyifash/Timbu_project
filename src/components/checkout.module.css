@@ -2,16 +2,115 @@
     width: 100%;
     padding: 3rem 5rem;
 }
+
+.span {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
 .payment {
     width: 100%;
     display: flex;
 }
 
-.pay1, .pay2 {
-    flex: 1;
-    background: blue;
+.pay1 {
+    flex: 2;
+    background: #FFFFFF;
 }
 
 .pay2 {
-    background: red;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.span2 {
+    display: block;
+}
+
+.top {
+    margin-bottom: 30px;
+}
+
+.pay1 span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.slide1, .slide2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 19px 10px 19px 10px;
+    border: solid 0;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 0px #0000000D;
+    margin-top: 15px;
+}
+
+.slide1 span, .slide2 span {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.entry {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.input label {
+    position: absolute;
+    top: -11px;
+    left: 10px;
+    background-color: #FFFFFF;
+    border: solid 0px;
+    padding: 0 2px 0 2px;
+    z-index: 200;
+}
+
+.entry1, .entry2 {
+    border: solid 2px #FF9900;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+}
+
+.entry1 {
+    width: 90%;
+}
+
+.entry2 {
+    width: 45%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn span {
+    background-color: #FF9900;
+    border-radius: 5px;
+    padding: 10px 40px 10px 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
 }
