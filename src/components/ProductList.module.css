@@ -28,6 +28,7 @@
     gap: 12px;
     background-color: #F7F7F7;
     box-shadow: 0 2px 10px 0 #0000001A;
+    position: relative;
 }
 
 
@@ -121,6 +122,23 @@
     font-size: 0.85rem;
 }
 
+.span {
+    padding: 0.5rem 0.5rem;
+    background: #FF9900;
+    color: white;
+    position: absolute;
+    right: 0%;
+}
 
 
+@media (max-width: 470px) {
 
+    .productcontainer {
+        padding: 1rem 2rem;
+     }
+    .catalogue {
+        grid-template-columns: 1fr;
+        gap: 0rem;
+        row-gap: 2rem;
+    }
+}

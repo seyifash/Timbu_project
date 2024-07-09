@@ -23,3 +23,10 @@ ul li a {
 ul li a.active {
     color: #ff9900;
 }
+
+@media (max-width: 470px) {
+
+    header{
+    padding: 1.3rem 2rem;
+    }
+}

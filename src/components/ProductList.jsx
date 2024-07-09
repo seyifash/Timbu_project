@@ -51,6 +51,7 @@ const ProductList = () => {
         {products1.slice(0, 3).map(product => (
           <li key={product.id} className={styles.productitem}>
             <img src={handleImage(`${product.imagefile}`)} alt={`image${product.id}`}></img>
+            <span className={styles.span}>40% off</span>
             <div className={styles.productdetails}>
               <div className={styles.descandprice}>
                 <p>{product.description}</p>
@@ -103,6 +104,23 @@ const ProductList = () => {
          View More Categories
       </button>
         </div>
+        <h1 className={styles.h1}>Available items on sale</h1>
+      {!more && <ul className={styles.catalogue}>
+        {products1.slice(0, 6).map(product => (
+          <li key={product.id} className={styles.productitem}>
+            <img src={handleImage(`${product.imagefile}`)} alt={`image${product.id}`}></img>
+            <span className={styles.span}>40% off</span>
+            <div className={styles.productdetails}>
+              <div className={styles.descandprice}>
+                <p>{product.description}</p>
+                <p>${product.price}</p>
+              </div>
+              <button onClick={() => handleBuyNow(product)}><Link to="/cart">Buy Now</Link></button>
+            </div>
+            
+          </li>
+        ))}
+      </ul>}
       </div>
       </>
   );
