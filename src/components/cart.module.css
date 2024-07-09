@@ -3,6 +3,7 @@
     min-height: 70vh;
     display: flex;
     justify-content: space-between;
+    align-items: start;
     padding: 2rem 5rem;
 
 }
@@ -100,7 +101,6 @@
 
 }
 .container2 .cat2 .li2 {
-    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -111,5 +111,28 @@
     height: 212px;
 }
 .productdetails {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productdetails button {
     
+    background-color: #FF9900;
+    border: solid 0;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1rem;
+    outline:none;
+    padding: 0.2rem 0.2rem;
+}
+
+.productdetails button a {
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.descandprice p {
+    text-align: left;
 }
