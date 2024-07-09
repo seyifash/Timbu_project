@@ -1,4 +1,11 @@
-.logo {
-    /*margin-top: 28px;
-    margin-left: 5%;*/
+.imglogo {
+    width: 205px;
+    height: 45px;
+}
+
+@media screen  and (max-width: 480px) {
+    .imglogo {
+        width: 120px;
+        height: 26px;
+    }
 }

@@ -42,15 +42,13 @@ const Cart = () => {
         <ul className={styles.items}>
         {cart.map(item => (
           <li key={item.id} className={styles.li}>
-            {console.log(item.imagefile)}
-            {console.log(item)}
             <img src={handleImage(`${item.imagefile}`)} alt={`image${item.id}`}  className={styles.img}></img>
             <div className={styles.desc}>
               <h2 className={styles.name}>{item.description}</h2>
               <p className={styles.price}>Price: #{item.price}</p>
               <p><span>Quantity:</span> {item.quantity}</p>
             </div>
-            <span className={styles.sp} onClick={() => handleRemoveItem(item.id)}>Remove Item <i class='bx bxs-trash-alt'></i></span>
+            <span className={styles.sp} onClick={() => handleRemoveItem(item.id)}><i class='bx bxs-trash-alt'></i></span>
           </li>
         ))}
         </ul>

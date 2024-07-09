@@ -5,14 +5,19 @@ import Logo from './logocomponent';
 const Footer = () => {
   return (
     <div className={styles.container}>
-
-      <Logo />
-      
-      <div className={styles.details}>
-        <span className={styles.home}>Home</span>
-        <span className={`${styles.shop}`}>Shop</span>
-        <span className={styles.cart}>Cart</span>
+      <div className={styles.logoanddetails}>
+        <div className={styles.logocontainer}>
+          <Logo />
+        </div>
+        
+        
+        <div className={styles.details}>
+          <span className={styles.home}>Home</span>
+          <span className={`${styles.shop}`}>Shop</span>
+          <span className={styles.cart}>Cart</span>
+        </div>
       </div>
+      
 
       <form className={styles.feedback}>
         <label className={styles.feedbackquestion}>Have a question or complaint? Send us a message!</label>

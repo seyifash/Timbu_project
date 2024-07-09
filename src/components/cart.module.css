@@ -15,6 +15,7 @@
     width: 55%;
 }
 .cart .h2 {
+
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 3rem
@@ -84,6 +85,10 @@
     font-size: 1rem;
     border-radius: 5px;
 }
+
+.sp::before {
+    content: 'Remove item';
+}
 .div {
     width: 100%;
     display: flex;
@@ -146,4 +151,84 @@
 .descandprice p {
     text-align: left;
     margin-left: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .li .img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .cat2 .li2  .img2{
+        width: 200px;
+        height: 140px;
+    }
+
+    .name {
+        font-weight: 400;
+        font-size: 1.0rem;
+        
+    }
+    
+    .price {
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+    .quanity {
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
+
+    .sp {
+        color: #FF3333;
+        border: 1px solid #FF3333;
+        padding: 0.3rem;
+        font-size: 0.7rem;
+        border-radius: 5px;
+    }
+}
+@media  screen and (max-width: 768px) {
+   
+    .container2 {
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    .cart {
+        padding: 6px;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .cart .h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .items {
+        margin: 0;
+    }
+    .li .img {
+        width: 149px;
+        height: 91px;
+        object-fit: cover;
+    }
+
+    .sp {
+        border: 0;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+
+    .sp::before {
+        content: '';
+    }
+
+    .container2 {
+        display: none;
+    }
 }

@@ -1,17 +1,24 @@
 .container {
-    display: flex;
     min-height: 50vh;
-    width: auto;
+    width: 100%;
     display: flex;
     background-color: rgba(140, 84, 0, 1);
-    padding: 1.5rem 7rem;
+    padding: 1.5rem 10%;
     justify-content: space-between;
 }
 
+.logoanddetails {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logocontainer {
+    margin-top: 20px;
+}
 
 .details {
     margin-top: 28px;
-    margin-left: 5%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -28,14 +35,15 @@
 }
 
 .feedback {
+    width:60%;
     margin-top: 33px;
-    margin-left: 15%;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
 }
 
 .feedbackquestion {
-    width: 455px;
+    width: 90%;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -44,6 +52,7 @@
 }
 
 .textarea {
+    width: 90%;
     height: 9rem;
     border: solid 2px;
     border-radius: 5px;
@@ -65,7 +74,7 @@
 
 
 .button {
-    width: 231px;
+    width: 80%;
     height: 50px;
     padding: 0.5rem 0.5rem;
     border: solid 0;
@@ -85,3 +94,32 @@
     color: rgba(255, 255, 255, 1);
 }
 
+@media screen and (max-width: 768px) {
+    .logoanddetails {
+        flex-direction: column;
+        justify-content: start;
+        gap: 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        justify-content: start;
+        gap: 2px;
+    }
+
+    .logoanddetails {
+        flex-direction: column;
+        justify-content: start;
+        gap: 3px;
+    }
+    .details {
+        margin-left: 10px;
+        padding: 4px;
+    }
+
+    .feedback {
+        width: 60%;
+    }
+}

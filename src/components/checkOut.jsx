@@ -8,7 +8,16 @@ const CheckOut = () => {
 
   return (
     <div className={styles.container}>
+      
       <span className={styles.span}>Payment Details</span>
+      <div className={styles.pay3}>
+          <div>
+            <span className={`${styles.span2} ${styles.top}`}><strong>Payment Summary</strong></span>
+            <span className={styles.span2}>Total Amount to be paid</span>
+            <span className={styles.span2}><strong>{totalPrice}</strong></span>
+          </div>
+          
+        </div>
       <div className={styles.payment}>
         <div className={styles.pay1}>
           <span>Make payment via </span>
