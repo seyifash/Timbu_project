@@ -1,6 +1,6 @@
 .cart {
     width: 100%;
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -72,8 +72,9 @@
     outline:none;
     color: #fff;
     padding: 0.5rem 0.5rem;
-    margin: 3rem auto;
+    margin: 1rem auto;
     text-align: center;
+    
 }
 
 .sp {
@@ -83,13 +84,18 @@
     font-size: 1rem;
     border-radius: 5px;
 }
-
+.div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .container2 {
     width: 40%; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .container2 .cat2 {
@@ -103,7 +109,7 @@
 .container2 .cat2 .li2 {
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
     align-items: center;
 }
 .cat2 .li2  .img2{
@@ -114,18 +120,19 @@
     margin-top: 10px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 .productdetails button {
-    
+    margin-top: 2rem;
     background-color: #FF9900;
     border: solid 0;
     border-radius: 5px;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.9rem;
     outline:none;
-    padding: 0.2rem 0.2rem;
+    padding: 0.5rem 1rem;
 }
 
 .productdetails button a {
@@ -133,6 +140,10 @@
     color: #FFFFFF;
 }
 
+.descandprice {
+    display: flex;
+}
 .descandprice p {
     text-align: left;
+    margin-left: 15px;
 }

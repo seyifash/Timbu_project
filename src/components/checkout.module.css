@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    padding: 3rem 5rem;
+}
+.payment {
+    width: 100%;
+    display: flex;
+}
+
+.pay1, .pay2 {
+    flex: 1;
+    background: blue;
+}
+
+.pay2 {
+    background: red;
+}

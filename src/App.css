@@ -1,4 +1,7 @@
 .App {
   width: 100%;
 }
+.div {
+  min-height: 70vh;
+}
 
