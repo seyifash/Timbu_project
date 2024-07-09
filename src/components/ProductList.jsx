@@ -15,7 +15,12 @@ const ProductList = () => {
   const [more, setMore] = useState(false);
 
   const handleBuyNow = (product) => {
-    dispatch(addToCart(product));
+    const productWithQuantity = {
+      ...product,
+      quantity: 1,
+      totalPrice: product.price
+    };
+    dispatch(addToCart(productWithQuantity));
   };
 
   const handleMoreItems = () => {

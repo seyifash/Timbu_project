@@ -1,6 +1,8 @@
-import { createStore, combineReducers} from "redux";
+import { createStore, combineReducers, applyMiddleware} from "redux";
 import { persistStore, persistReducer } from 'redux-persist';
+import {composeWithDevTools } from 'redux-devtools-extension';
 import storage from 'redux-persist/lib/storage';
+import { thunk } from 'redux-thunk'
 import productsReducer from './reducers/productReducers';
 import cartReducer from "./reducers/cartReducers";
 
@@ -16,8 +18,9 @@ const persistConfig = {
     cartData: persistReducer(persistConfig, cartReducer),
 
   });
-  
-  const store = createStore(rootReducer);
+
+  const middleware = [thunk]
+  const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(...middleware)));
   const persistor = persistStore(store);
   
   export { store, persistor };
