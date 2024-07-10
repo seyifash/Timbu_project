@@ -29,7 +29,7 @@ const ProductList = () => {
   
 
   return (
-    <>
+    <div className={styles.contain}>
     <div className={styles.search}>
       <input type="text" placeholder='Search' className={styles.input} />
       <div className={styles.filter}>
@@ -122,7 +122,7 @@ const ProductList = () => {
         ))}
       </ul>}
       </div>
-      </>
+      </div>
   );
 };
 

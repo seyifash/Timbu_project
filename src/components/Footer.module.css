@@ -103,6 +103,11 @@
 }
 
 @media screen and (max-width: 480px) {
+    .container {
+        padding: 1.5rem 1rem;
+        justify-content: space-between;
+    }
+    
 
     .container {
         justify-content: start;
