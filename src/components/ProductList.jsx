@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './ProductList.module.css'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { addToCart } from '../Actions/cartActions';
 import products1 from '../products.json';
 import { Link } from 'react-router-dom'
@@ -11,7 +11,7 @@ const handleImage = (imgName) => {
 
 const ProductList = () => {
   const dispatch = useDispatch();
-  const products = useSelector(state => state.productData.products);
+  const [searchTerm, setSearchTerm] = useState('');
   const [more, setMore] = useState(false);
 
   
@@ -29,11 +29,24 @@ const ProductList = () => {
       setMore(prevState => !prevState)
   }
   
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredProducts = products1.filter(product =>
+    product.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className={styles.contain}>
     <div className={styles.search}>
-      <input type="text" placeholder='Search' className={styles.input} />
+      <input
+          type="text"
+          placeholder="Search"
+          className={styles.input}
+          value={searchTerm}
+          onChange={handleSearchChange}
+        />
       <div className={styles.filter}>
         <span className={styles.filt}>Filters</span>
         <div className={styles.cat}>
@@ -50,7 +63,7 @@ const ProductList = () => {
       <div className={styles.productcontainer}>
       <h1 className={styles.h1}>Available items on sale</h1>
       {!more && <ul className={styles.catalogue}>
-        {products1.slice(0, 3).map(product => (
+      {filteredProducts.slice(0, 3).map(product => (
           <li key={product.id} className={styles.productitem}>
             <img src={handleImage(`${product.imagefile}`)} alt={`image${product.id}`}></img>
             <span className={styles.span}>40% off</span>
@@ -69,7 +82,7 @@ const ProductList = () => {
         See More
       </button>}
       {more && <ul className={styles.catalogue}>
-        {products1.map(product => (
+        {filteredProducts.map(product => (
           <li key={product.id} className={styles.productitem}>
             <img src={handleImage(`${product.imagefile}`)} alt={`image${product.id}`}></img>
             <div className={styles.productdetails}>
@@ -105,7 +118,7 @@ const ProductList = () => {
          View More Categories
       </button>
         </div>
-        <h1 className={styles.h1}>Available items on sale</h1>
+        {!more && <h1 className={styles.h1}>Available items on sale</h1>}
       {!more && <ul className={styles.catalogue}>
         {products1.slice(0, 6).map(product => (
           <li key={product.id} className={styles.productitem}>
