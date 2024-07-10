@@ -16,6 +16,8 @@ const handleImage = (imgName) => {
 
 const Cart = () => {
   const cart = useSelector(state => state.cartData.cart);
+  const totalPrice = cart.reduce((acc, item) => acc + item.totalPrice, 0);
+
   const dispatch = useDispatch();
 
   const handleBuyNow = (product) => {
@@ -52,6 +54,7 @@ const Cart = () => {
           </li>
         ))}
         </ul>
+        <span className={styles.total}>Total: #{totalPrice}</span>
         <div className={styles.div}><Link to="/checkout" className={styles.orders}>Proceed to checkout</Link></div>
       </div>
       )

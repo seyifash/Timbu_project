@@ -87,7 +87,7 @@
     background-color: #FFFFFF;
     border: solid 0px;
     padding: 0 2px 0 2px;
-    z-index: 200;
+    z-index: 2;
 }
 
 .entry1, .entry2 {
@@ -123,19 +123,18 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
 @media screen  and (max-width: 480px) {
 
     .container {
-        padding: 4px;
+        margin-top: 5rem;
+        padding: 1rem;
     }
-    .span {
-        margin-top: 14px;
-    }
+
     .pay2 {
         display: none;
     }
@@ -163,5 +162,11 @@
 
     .span2 {
         font-size: 18px;
+    }
+    .span {
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.5rem;
     }
 }

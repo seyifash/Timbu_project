@@ -14,6 +14,8 @@ const ProductList = () => {
   const products = useSelector(state => state.productData.products);
   const [more, setMore] = useState(false);
 
+  
+
   const handleBuyNow = (product) => {
     const productWithQuantity = {
       ...product,
@@ -55,9 +57,9 @@ const ProductList = () => {
             <div className={styles.productdetails}>
               <div className={styles.descandprice}>
                 <p>{product.description}</p>
-                <p>${product.price}</p>
+                <p className={styles.strong}>price: ${product.price}</p>
               </div>
-              <button onClick={() => handleBuyNow(product)}><Link to="/cart">Buy Now</Link></button>
+              <button className={styles.try} onClick={() => handleBuyNow(product)}><Link to="/cart">Buy Now</Link></button>
             </div>
             
           </li>
@@ -92,8 +94,7 @@ const ProductList = () => {
                 <img src={handleImage(`${product.imagefile}`)} alt={`image${product.id}`}></img>
                 <div className={styles.productdetails}>
                   <div className={styles.descandprice}>
-                    <p>{product.category}</p>
-                    <p>${product.price}</p>
+                    <p className={styles.strong2}>{product.category}</p>
                   </div>
                   <button onClick={() => handleBuyNow(product)}><Link to="/cart">Shop Now</Link></button>
                 </div>  
@@ -113,7 +114,7 @@ const ProductList = () => {
             <div className={styles.productdetails}>
               <div className={styles.descandprice}>
                 <p>{product.description}</p>
-                <p>${product.price}</p>
+                <p className={styles.strong}>price: ${product.price}</p>
               </div>
               <button onClick={() => handleBuyNow(product)}><Link to="/cart">Buy Now</Link></button>
             </div>

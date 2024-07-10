@@ -1,11 +1,16 @@
-import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from './logocomponent';
 import './NavBar.css';
 
 const NavBar = () => {
 
-  const [menu, setShowMenu] = useState(false);
+      const [menu, setShowMenu] = useState(false);
+      const location = useLocation();
+
+      useEffect(() => {
+        setShowMenu(false);
+      }, [location]);
 
   const handleShowMenu = () => {
       setShowMenu(prevState => !prevState)
